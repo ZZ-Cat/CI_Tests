@@ -2,12 +2,6 @@
 
 CI_Tests ci_tests;
 
-void setup()
-{
-    ci_tests.begin();
-}
+void setup() { ci_tests.begin(); }
 
-void loop()
-{
-    ci_tests.run();
-}
+void loop() { ci_tests.run(); }
