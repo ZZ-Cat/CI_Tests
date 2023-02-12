@@ -1,0 +1,5 @@
+# Syntax highlighting map for CI_Tests.
+# This syntax highlighting is only available in the Arduino IDE.
+# Visual Studio Code uses its own syntax highlighting.
+begin   KEYWORD2
+run     KEYWORD2
