@@ -1,5 +1,5 @@
-#include "Arduino.h"
 #include "CI_Tests.h"
+#include "Arduino.h"
 
 CI_Tests::CI_Tests()
 {
@@ -18,7 +18,7 @@ bool CI_Tests::begin()
 void CI_Tests::run()
 {
     static uint32_t blinkTimestamp = millis();
-    while (_testCount > 0)
+    do
     {
         if (millis() - blinkTimestamp > 1000)
         {
@@ -26,5 +26,5 @@ void CI_Tests::run()
             digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
             _testCount--;
         }
-    }
+    } while (_testCount > 0);
 }

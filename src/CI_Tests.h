@@ -1,10 +1,11 @@
 class CI_Tests
 {
-public:
+  public:
     CI_Tests();
     ~CI_Tests();
     bool begin();
     void run();
-protected:
+
+  protected:
     uint32_t _testCount = 6;
 }; // class CI_Tests
